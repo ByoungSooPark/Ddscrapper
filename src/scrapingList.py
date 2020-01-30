@@ -39,6 +39,9 @@ def main(start_page, max_page):
                         .format(TITLE=title, ADDRESS=address))
             conn.commit()
             conn.close()
+            title = ''
+            address = ''
+            
         raw_data.decompose()
         raw_data = None
         dog_drip_list = None
